@@ -1,0 +1,49 @@
+/* CSS Document */
+body{font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif}
+#newbar{background-color:#560405; color:#fff; text-align:left}
+
+/* CSS background for ion-view content */
+.bodyenclose{min-height:100%; background:url(../img/beach_mobile2.jpg); background-size:cover; }
+.bodyenclose3{min-height:100%; background:url(../img/scene.jpg); background-size:cover;}
+.bodyenclose2{min-height:100%; background-color:#323030}
+
+/* ionic list style */
+#loglist{position:absolute; top:15em;  }
+.listshow{margin-top:5em; background:hsla(125,58%,45%,0.45);}
+#homelist{font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; color:#222; font-weight:bold;background-color:hsla(0,40%,98%,0.00); margin-top:2em;}
+.bcklist{background-color:hsla(90,54%,37%,0.70); border-color:#999; font-size:1.2em; margin-bottom:0.5em; padding-bottom:1.3em; padding-top:1.3em; }
+.bcklist i{font-size:1.2em; color:#8B2C06;}
+.backBodyList{background:hsla(125,58%,45%,0.75); color:#333}
+.backBodyList p{color:#333}
+.aboutListMg{margin-top:5em;}
+.aboutList{background:hsla(0,30%,96%,0.01)}
+.bcklist2{ background:hsla(10,0%,86%,0.46); border-color:#999; color:#666;}
+
+/* image logo*/
+.logo_backgd{ text-align:center; background-color:hsla(0,0%,91%,0.26); padding:1.5em;}
+.image_def{width:17em; height:auto; }
+
+/* ionic nav bar title and background*/
+.title{font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif; font-weight:bold}
+#barbgd{background-color:hsla(235,59%,29%,0.94)}
+h2.fetTitle{ font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif}
+
+/* form inputs css*/
+input,select,button.btnfull{width:98%;}
+button{font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif}
+.input-label{color:#222}
+
+/* error msg css */
+p.errmsg{padding:3px; color:#9B1114; text-align:center; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif}
+p.sucmsg{padding:3px; color:#093520; text-align:center; font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif}
+.loading{ background:hsla(0,0%,0%,0.00); padding: 5px; }
+.loading i{color:#000;}
+
+
+
+
+
+
+
+
+

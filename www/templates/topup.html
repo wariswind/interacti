@@ -1,0 +1,66 @@
+<ion-view title="TopUp Details" >
+	<ion-content  class="bodyenclose3" has-header="true" >
+   		<div class="logo_backgd"><img src="img/fets-logo.png" class="image_def" ></div>
+        <div ng-show="showform" >
+        <form name="form" class="css-form" novalidate>
+            <div class="list card listshow" >
+            <div class="item item-stable item-divider">
+            TopUp Details
+            <p class="sucmsg" ng-show="sucDisplay">{{sucMsg}}</p>
+            </div>
+                <div class="item item-input bcklist2 item-stacked-label">
+                    <span class="input-label">Mobile Number</span>
+                    <input type="tel" placeholder="Enter Mobile Number"  ng-model="allval.mobileNumber" required>
+                 </div>
+                <div class="item item-input bcklist2 item-stacked-label">
+                <span  class="input-label">
+                    Network
+                </span >
+                <select ng-change="topupPrice=''" ng-model="allval.allcards" ng-options="network.name for network in networks" required>
+                  <option value="">-- Select  Network --</option>
+                </select>
+                </div>
+                <div class="item item-input bcklist2 item-stacked-label">
+                <div class="input-label">
+                  Topup Value
+                </div>
+                <select ng-change="topupPrice=allval.newCard.value" ng-model="allval.newCard" ng-options="card.name for card in allval.allcards.cards" 
+                required>
+                  <option value="">-- Select Value --</option>
+                </select>
+              
+              </div>
+              <label class="item item-input bcklist2">
+              <button class="button button-full button-dark btnfull" ng-disabled="form.$invalid"  ng-click="topup()">Top Up</button>
+              </label>
+            </div>
+        </form>
+        </div>
+        
+        <div ng-hide="showform" >
+        <form name="form2" class="css-form" novalidate>
+            <div class="list card listshow">
+            <div class="item item-stable item-divider">
+            Wallet Confirmation
+            <p class="errmsg" ng-show="authPay">{{authMsg}}</p>
+            </div>
+            <div class="item item-input bcklist2 item-stacked-label">
+            <span class="input-label">Wallet ID</span>
+            <input type="text" placeholder="Enter Wallet Number" disabled  ng-model="wallet.walletid" required>
+            </div>
+            <div class="item item-input bcklist2 item-stacked-label">
+            <span class="input-label">Password</span>
+            <input type="password" placeholder="Enter Wallet Password"  ng-model="allval.walletpasd"  required>
+            </div>
+            <div class="item  bcklist2" >
+            <button class="button  button-dark " ng-disabled="form.$invalid"  ng-click="topupCancel()">Cancel</button> &nbsp;
+            <button class="button  icon-left ion-locked button-dark  "  ng-disabled="form2.$invalid"  ng-click="topupConfirm()">Continue with Top Up</
+            button>
+            </div>
+            </div>
+		</form>
+        </div>
+   
+
+	</ion-content>
+</ion-view>
